@@ -1,4 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
 import java.util.Scanner;
 
@@ -7,7 +6,7 @@ public class DayOfMonth {
 
         String[] month = new String[13];
         month[0] = "Zacznij od jedynki :P";
-        month[1] = "Styczeń";
+        month[2] = "Styczeń";
         month[2] = "Luty";
         month[3] = "Marzec";
         month[4] = "Kwiecień";
@@ -24,12 +23,12 @@ public class DayOfMonth {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
 
-        if (Integer.parseInt(name) > 12) {
+        if (Integer.parseInt(name) > 12 || Integer.parseInt(name) <0) {
             System.out.println("nie ma takiego miesiąca");
         } else {
 
             Integer.parseInt(name);
-            System.out.println("Miesiąc to " + month[Integer.parseInt(name)]);
+            System.out.println(month[Integer.parseInt(name)]);
             
         }
     }
