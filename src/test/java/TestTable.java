@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class TestTable {
     public static void main(String[] args) {
 
@@ -13,10 +15,15 @@ public class TestTable {
         numbers[8] = 2;
         numbers[9] = 1;
 
-        System.out.println("pobrany argument to: " + numbers[1]);
+//        System.out.println("pobrany argument to: " + numbers[1]);
 
-        if ((numbers[1] % 2)==1) {
-            System.out.println("liczba " + numbers[1] + " jest nieparzysta");
+        System.out.println("Podaj indeks z tablicy");
+
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+
+        if ((numbers[number] % 2)==1) {
+            System.out.println("liczba " + numbers[number] + " jest nieparzysta");
         } else
             System.out.println("jest parzysta");
 
