@@ -7,12 +7,11 @@ public class MultiplicationTable {
     public static void main(String[] args) {
 
         System.out.println("podaj wartość x");
-        Scanner scan1 = new Scanner(System.in);
-        int x = scan1.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
 
         System.out.println("podaj wartość y");
-        Scanner scan2 = new Scanner(System.in);
-        int y = scan2.nextInt();
+        int y = scan.nextInt();
 
         int numbers[][] = new int[100][100];
 
