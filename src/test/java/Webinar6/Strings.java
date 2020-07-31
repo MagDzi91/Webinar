@@ -1,5 +1,6 @@
 package Webinar6;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 
 
 public class Strings {
@@ -46,11 +47,20 @@ public class Strings {
         System.out.println(("Słowo nr 2 ma " + word2.length() + " znaków" + "...i tak dalej"));
 
 
-        //kopia tekstu
+        //kopia tekstu i zamiana znaków
+        String text2 = text;
+        System.out.println(text2.replace("wyścig", "nowa")) ;
 
+        //Stwórz 2 nowe ciągi (String) z których jeden będzie zawierał 2 pierwsze i 2 ostatnie słowa ciągu bazowego, a drugi wszystkie pozostałe
 
-        //zmiana znaków
-        System.out.println(text.replace("wyścig", "nowa")) ;
+        String text3 = word1 + " " + word2 + " " + word11 + " " + word12;
+        System.out.println(text3);
+        String text4 = word3 + " " + word4 + " " + word5 + " " + word6 + " " + word7 + " " + word8 + " " + word9 + " " + word10;
+        System.out.println(text4);
+
+        //sortowanie alfabetyczne
+        String text5 = text4;
+
 
     }
 }
