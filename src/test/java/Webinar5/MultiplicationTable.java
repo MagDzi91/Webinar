@@ -13,7 +13,7 @@ public class MultiplicationTable {
         System.out.println("podaj wartość y");
         int y = scan.nextInt();
 
-        int numbers[][] = new int[100][100];
+        int numbers[][] = new int[101][101];
 
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 100; j++) {
