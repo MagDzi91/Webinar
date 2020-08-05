@@ -1,10 +1,12 @@
 package Webinar7;
 
+import java.util.Scanner;
+
 public class Student extends Person {
 
-    int semester = 2;
-    int year = 3;
-    String fieldOfStudy = "Zarządzanie";
+    int semester;
+    int year;
+    String fieldOfStudy;
 
 
 
@@ -13,8 +15,16 @@ public class Student extends Person {
     }
 
     public void setNewStudent () {
-        System.out.println("cześć, jestem "+ this.getName() + " " + this.getSurname() + " i mam " + this.getAge() + " lat");
-        System.out.println("Studiuję na " + this.year + " roku " + this.semester + " semestru" + " na kierunku " + this.fieldOfStudy);
+        System.out.println("Podaj kierunek studiów");
+        Scanner scan = new Scanner(System.in);
+        String fieldOfStudy = scan.nextLine();
+        System.out.println("Podaj rok");
+        int year = scan.nextInt();
+        System.out.println("Podaj nr semestru");
+        int semester = scan.nextInt();
+
+        System.out.println("Studiuję na " + year + " roku " + semester + " semestru" + " na kierunku " + fieldOfStudy);
+
 
     }
 

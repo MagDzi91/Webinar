@@ -1,11 +1,14 @@
 package Webinar7;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+import java.util.Scanner;
+
 public class Teacher extends Person {
 
-    int salary = 5000;
-    String degree = "Profesor";
-    int annualSalary = salary * 12;
-    double annualBonus = annualSalary * 0.10;
+    int salary;
+    String degree;
+    int annualSalary;
 
 
     public Teacher(String name, String surname, int age) {
@@ -13,16 +16,18 @@ public class Teacher extends Person {
     }
 
     public void setNewTeacher () {
-        System.out.println("cześć, jestem "+ this.getName() + " " + this.getSurname() + " i mam " + this.getAge() + " lat");
-        System.out.println("Mój stopień naukowy to " + this.degree +" " + "i zarabiam " + this.salary + " PLN");
-    }
-
-    public void countAnnualSalary() {
+        System.out.println("Podaj swój stopień naukowy");
+        Scanner scan = new Scanner(System.in);
+        String degree = scan.nextLine();
+        System.out.println("Podaj swoją miesięczną pensję");
+        int salary = scan.nextInt();
+        System.out.println("Mój stopień naukowy to " + degree + " " + "i zarabiam " + salary + " PLN");
+        int annualSalary = salary * 12;
         System.out.println("Moja roczna pensja wynosi " + annualSalary + " " + "PLN");
+        double annualBonus = annualSalary * 0.1;
+        System.out.println("Moja roczna premia wynosi " + annualBonus + " " + "PLN");
+
+    }
     }
 
-    public void countAnnualBonus() {
-        System.out.println("Moja roczna premia wynosi " + annualBonus + " " + "PLN");
-    }
-    }
 
