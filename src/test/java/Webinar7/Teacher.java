@@ -8,11 +8,10 @@ public class Teacher extends Person {
     private double annualBonus;
 
 
-    public Teacher(String name, String surname, int age, int salary, String degree, int annualSalary) {
+    public Teacher(String name, String surname, int age, int salary, String degree) {
         super(name, surname, age);
         this.salary = salary;
         this.degree = degree;
-        this.annualSalary = annualSalary;
     }
 
     public void selfIntroduction() {

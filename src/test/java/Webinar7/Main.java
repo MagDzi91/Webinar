@@ -5,7 +5,7 @@ public class Main {
 
 
         System.out.println("------------------------");
-        Teacher teacher1 = new Teacher("Robert", "Dziedziczny", 25, 2500, "Profesor", 30000);
+        Teacher teacher1 = new Teacher("Robert", "Dziedziczny", 25, 2500, "Profesor");
         teacher1.selfIntroduction();
         teacher1.calculateBonus();
 
