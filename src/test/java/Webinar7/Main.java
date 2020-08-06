@@ -2,18 +2,11 @@ package Webinar7;
 
 public class Main {
     public static void main(String[] args) {
-        Person x = new Person("Magda", " Dziedzic", 29);
-        Person y = new Person("Grześ", " Nowak", 13);
-        Person z = new Person("Kuba", " Kowalski", 33);
 
-        x.selfIntroduction();
-        y.selfIntroduction();
-        z.selfIntroduction();
 
         System.out.println("------------------------");
-        Teacher teacher1 = new Teacher("Robert", "Dziedziczny", 25);
-        teacher1.selfIntroduction();
-        teacher1.setNewTeacher();
+        Teacher teacher1 = new Teacher("Robert", "Dziedziczny", 25, 2500, "Profesor", 30000);
+        teacher1.introduceYourself();
 
         System.out.println("------------------------");
         Student student1 = new Student("Jowita", "Kulka", 24);

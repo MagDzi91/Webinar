@@ -23,7 +23,7 @@ public class Student extends Person {
         System.out.println("Podaj nr semestru");
         int semester = scan.nextInt();
 
-        System.out.println("Studiuję na " + year + " roku " + semester + " semestru" + " na kierunku " + fieldOfStudy);
+        System.out.println("Studiuję na " + this.year + " roku " + this.semester + " semestru" + " na kierunku " + this.fieldOfStudy);
 
 
     }
