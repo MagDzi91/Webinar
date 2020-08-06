@@ -2,9 +2,9 @@ package Webinar7;
 
 public class Student extends Person {
 
-    int semester;
-    int year;
-    String fieldOfStudy;
+    private int semester;
+    private int year;
+    private String fieldOfStudy;
 
 
     public Student(String name, String surname, int age, int semester, int year, String fieldOfStudy) {
