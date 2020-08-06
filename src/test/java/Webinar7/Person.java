@@ -23,17 +23,5 @@ public class Person {
 
     }
 
-    public String getName() {
-        return this.name;
-    }
-
-    public String getSurname() {
-        return this.surname;
-    }
-
-    public int getAge() {
-        return this.age;
-    }
-
 }
 
