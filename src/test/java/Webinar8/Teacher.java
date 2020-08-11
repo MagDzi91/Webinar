@@ -1,6 +1,6 @@
 package Webinar8;
 
-public abstract class Teacher extends Person {
+public class Teacher extends Person {
 
     private double salary;
     private String degree;
@@ -18,8 +18,16 @@ public abstract class Teacher extends Person {
         System.out.println("cześć, jestem " + this.name + " " + this.surname + " i mam " + this.age + " lat");
     }
 
-    public abstract void purposeOfStudy();
-    public abstract void holidays();
+    @Override
+    public  void tellAboutPurposeOfStudy() {
+        System.out.println("Cel studiów: NAUCZAM");
+    }
+
+    @Override
+    public  void tellAboutHolidays() {
+        System.out.println("Plan na wakacje: Jadę w góry");
+
+    }
 
     public void calculateBonus() {
         this.annualSalary = this.salary * 12;

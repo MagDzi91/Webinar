@@ -16,24 +16,22 @@ public abstract class Person {
         this.surname = surname;
         this.age = age;
     }
-    public abstract void purposeOfStudy();
 
-    public abstract void holidays();
+    public abstract void tellAboutPurposeOfStudy();
 
+    public abstract void tellAboutHolidays();
 
-//    public void selfIntroduction() {
-//        System.out.println("cześć, jestem " + this.name + " " + this.surname + " i mam " + this.age + " lat");
-//    }
-
-    public final void selfIntroductionFinal() {
+    public void selfIntroduction() {
         System.out.println("cześć, jestem " + this.name + " " + this.surname + " i mam " + this.age + " lat");
-
 
     }
 
+    public static void tellAboutYourself(Person person) {
+        person.selfIntroduction();
+        person.tellAboutHolidays();
+        person.tellAboutPurposeOfStudy();
 
-
-
-
+    }
 }
+
 
