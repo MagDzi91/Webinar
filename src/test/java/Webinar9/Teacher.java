@@ -29,17 +29,18 @@ public class Teacher extends Person implements TeacherExamMethods, TeacherScient
     }
 
     @Override
-    public void writeScientificWork(String writeMethodName) {
+    public void writeScientificWork() {
 
     }
 
     @Override
-    public void research(String researchMethodName) {
+    public void research() {
 
     }
 
     @Override
-    public void examMethod(String examMethodName) {
+    public void examMethod() {
+        System.out.println("Sprawdzam egzamin bardzo szybko" );
 
     }
 }

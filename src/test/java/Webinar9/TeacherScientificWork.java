@@ -2,7 +2,7 @@ package Webinar9;
 
 public interface TeacherScientificWork {
 
-    void writeScientificWork(String writeMethodName);
+    void writeScientificWork();
 
-    void research (String researchMethodName);
+    void research ();
 }
