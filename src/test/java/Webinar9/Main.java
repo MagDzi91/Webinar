@@ -12,8 +12,10 @@ public class Main {
 
         System.out.println("=======================================");
 
-
-
+        Teacher teacher = new Teacher("Karol", "Kobyłka", 32, 2666, "Profesor");
+        teacher.selfIntroduction();
+        teacher.examMethod();
+        teacher.research();
 
 
     }
