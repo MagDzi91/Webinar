@@ -1,4 +1,6 @@
-package Webinar8;
+package Webinar9;
+
+import Webinar8.Person;
 
 public class Teacher extends Person {
 
@@ -26,10 +28,5 @@ public class Teacher extends Person {
     public  void tellAboutHolidays() {
         System.out.println("Plan na wakacje: Jadę w góry");
 
-
     }
-
 }
-
-
-

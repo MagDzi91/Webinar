@@ -1,4 +1,9 @@
-package Webinar8;
+package Webinar9;
+
+import Webinar8.Person;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Student extends Person {
 
@@ -36,5 +41,14 @@ public class Student extends Person {
     public void tellAboutHolidays() {
         System.out.println("Plan na wakacje: cziluje nad morzem");
 
+    }
+
+    Map<String, Integer> index = new HashMap<String, Integer>();
+    public Map<String, Integer> getIndex() {
+        index.put("Angielski", 4);
+        index.put("Historia", 3);
+        index.put("Matematyka", 4);
+        index.put("Zarządzanie", 3);
+        return index;
     }
 }

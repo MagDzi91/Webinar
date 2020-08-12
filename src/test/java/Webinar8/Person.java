@@ -1,9 +1,9 @@
 package Webinar8;
 
 public abstract class Person {
-    protected String name;
-    protected String surname;
-    protected int age;
+    private String name;
+    private String surname;
+    private int age;
 
     public Person() {
         this.name = "unknown";
