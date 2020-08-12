@@ -1,12 +1,8 @@
 package Webinar9;
 
-import Webinar8.Person;
+public class Student extends Person implements StudentFriendsTime, StudentMethods {
 
-import java.util.HashMap;
-import java.util.Map;
-
-public class Student extends Person {
-
+    public static Object getIndexNumber = 123456;
     private int semester;
     private int year;
     private String fieldOfStudy;
@@ -43,12 +39,13 @@ public class Student extends Person {
 
     }
 
-    Map<String, Integer> index = new HashMap<String, Integer>();
-    public Map<String, Integer> getIndex() {
-        index.put("Angielski", 4);
-        index.put("Historia", 3);
-        index.put("Matematyka", 4);
-        index.put("Zarządzanie", 3);
-        return index;
+    @Override
+    public void goOutside(String placeName) {
+
+    }
+    @Override
+    public void examMethod(String methodName) {
+
     }
 }
+

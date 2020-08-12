@@ -1,8 +1,7 @@
 package Webinar9;
 
-import Webinar8.Person;
 
-public class Teacher extends Person {
+public class Teacher extends Person implements TeacherExamMethods, TeacherScientificWork {
 
     private double salary;
     private String degree;
@@ -26,6 +25,21 @@ public class Teacher extends Person {
     @Override
     public  void tellAboutHolidays() {
         System.out.println("Plan na wakacje: Jadę w góry");
+
+    }
+
+    @Override
+    public void writeScientificWork(String writeMethodName) {
+
+    }
+
+    @Override
+    public void research(String researchMethodName) {
+
+    }
+
+    @Override
+    public void examMethod(String examMethodName) {
 
     }
 }
