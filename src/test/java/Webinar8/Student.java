@@ -12,11 +12,11 @@ public class Student extends Person {
         this.semester = semester;
         this.year = year;
         this.fieldOfStudy = fieldOfStudy;
+
         if (age>MAX_AGE){
             System.out.println("Jestes za stary na studiowanie, wynocha!");
             System.exit(0);
         }
-
     }
 
     @Override
