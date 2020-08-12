@@ -14,7 +14,6 @@ public class Teacher extends Person {
 
     @Override
     public void selfIntroduction() {
-        super.selfIntroduction();
     }
 
     @Override
