@@ -14,8 +14,8 @@ public class Main {
 
         Teacher teacher = new Teacher("Karol", "Kobyłka", 32, 2666, "Profesor");
         teacher.selfIntroduction();
-        teacher.examMethod();
         teacher.research();
+        teacher.examMethod();
 
 
     }

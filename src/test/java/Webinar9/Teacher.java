@@ -53,12 +53,7 @@ public class Teacher extends Person implements TeacherExamMethods, TeacherScient
     @Override
     public void examMethod() {
 
-        if (passedExams == false) {
-            System.out.println("Wszyscy studenci zdali egzaminy");
-        } else {
-            System.out.println("Jeszcze nie wszyscy studenci zdali egzamin");
 
-        }
 
     }
 
