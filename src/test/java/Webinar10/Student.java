@@ -5,7 +5,7 @@ public abstract class Student extends Person {
     public static Object getIndexNumber = 21232132;
     private int semester;
     private int year;
-    private String fieldOfStudy;
+    String fieldOfStudy;
     public String placeToGo;
     public String timeToGo;
     public String timeToStudy;
@@ -45,4 +45,5 @@ public abstract class Student extends Person {
     private void go() {
         System.out.println(String.format("Wychodzę do: %s o godzinie: %s", placeToGo, timeToGo));
     }
+
 }
