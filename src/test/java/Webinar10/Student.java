@@ -46,4 +46,6 @@ public abstract class Student extends Person {
         System.out.println(String.format("Wychodzę do: %s o godzinie: %s", placeToGo, timeToGo));
     }
 
+
+
 }

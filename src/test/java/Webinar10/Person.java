@@ -4,6 +4,8 @@ public abstract class Person {
     private String name;
     private String surname;
     private int age;
+    public final static int MAX_AGE = 30;
+
 
     public Person() {
         this.name = "unknown";
@@ -23,6 +25,15 @@ public abstract class Person {
 
     public void selfIntroduction() {
         System.out.println("cześć, jestem " + this.name + " " + this.surname + " i mam " + this.age + " lat");
+
+    }
+
+    public void checkAge() {
+        if (age >= MAX_AGE) {
+            System.out.println("Jesteś za stary");
+        } else {
+            System.out.println("Wiek poniżej 30 lat - OK");
+        }
 
     }
 
