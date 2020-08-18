@@ -1,0 +1,6 @@
+name: Magdalena,
+surname: Nowak,
+age: 28,
+semester: 1,
+year: 2,
+fieldOfStudy: Turystyka,

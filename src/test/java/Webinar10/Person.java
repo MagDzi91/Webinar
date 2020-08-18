@@ -1,5 +1,7 @@
 package Webinar10;
 
+import java.io.File;
+
 public abstract class Person {
     private String name;
     private String surname;
@@ -19,6 +21,7 @@ public abstract class Person {
         this.age = age;
     }
 
+
     public abstract void tellAboutPurposeOfStudy();
 
     public abstract void tellAboutHolidays();
@@ -28,13 +31,12 @@ public abstract class Person {
 
     }
 
-    public void checkAge() {
+    public void checkAge() throws IllegalArgumentException {
         if (age >= MAX_AGE) {
-            System.out.println("Jesteś za stary");
+            throw new IllegalArgumentException( "Jestes za stary" );
         } else {
             System.out.println("Wiek poniżej 30 lat - OK");
+            }
         }
 
     }
-
-}
