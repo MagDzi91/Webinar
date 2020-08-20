@@ -1,7 +1,5 @@
 package Webinar10;
 
-import java.io.File;
-
 public abstract class Person {
     private String name;
     private String surname;
