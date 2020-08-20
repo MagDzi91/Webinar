@@ -1,7 +1,5 @@
 package Webinar10;
 
-import java.io.File;
-
 public abstract class Person {
     private String name;
     private String surname;
@@ -28,7 +26,6 @@ public abstract class Person {
 
     public void selfIntroduction() {
         System.out.println("cześć, jestem " + this.name + " " + this.surname + " i mam " + this.age + " lat");
-
     }
 
     public void checkAge() throws IllegalArgumentException {
