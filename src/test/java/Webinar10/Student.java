@@ -10,10 +10,10 @@ import java.util.stream.Stream;
 
 public class Student extends Person {
 
-    public static Object getIndexNumber = 21232132;
+    public static Object getIndexNumber;
     private int semester;
     private int year;
-    String fieldOfStudy;
+    private String fieldOfStudy;
     public String placeToGo;
     public String timeToGo;
     public String timeToStudy;
