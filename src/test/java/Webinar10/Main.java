@@ -11,8 +11,8 @@ public class Main {
 
         System.out.println("=======================================");
 
-//        String path = "src\\test\\java\\Webinar10\\plik.txt";
-//        Student newStudent1 = new Student(path);
+        Student student2= StudentCreator.createStudentFromFile()
+
 
         System.out.println("=======================================");
 
