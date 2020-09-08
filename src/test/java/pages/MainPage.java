@@ -1,9 +1,9 @@
 package pages;
 
-import config.DriverHelper;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import tests.BaseTest;
 
 public class MainPage {
 
@@ -16,11 +16,12 @@ public class MainPage {
 
 
     public MainPage() {
-        PageFactory.initElements(DriverHelper.getDriver(), this);
+        PageFactory.initElements(BaseTest.setUp(), this);
     }
 
-    public void selectEveningDresses() {
+    public MainPage selectEveningDresses() {
         dresses.click();
+        return new MainPage();
 
     }
 
