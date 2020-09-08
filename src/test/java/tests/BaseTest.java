@@ -1,4 +1,4 @@
-package Webinar12;
+package tests;
 
 import config.DriverHelper;
 import org.junit.After;

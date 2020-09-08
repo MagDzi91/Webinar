@@ -1,4 +1,4 @@
-package Webinar12;
+package tests;
 
 import pages.MainPage;
 import org.junit.Test;
