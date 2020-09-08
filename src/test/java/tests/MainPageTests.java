@@ -1,7 +1,7 @@
 package tests;
 
-import pages.MainPage;
 import org.junit.Test;
+import pages.MainPage;
 
 public class MainPageTests extends BaseTest {
 
@@ -11,7 +11,5 @@ public class MainPageTests extends BaseTest {
         mainPage.selectEveningDresses();
 
     }
-
-
 
 }
