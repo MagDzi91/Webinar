@@ -8,8 +8,13 @@ public class MainPageTests extends BaseTest {
     @Test
     public void clickOnEveningDresses() {
         MainPage mainPage = new MainPage();
-        mainPage.selectEveningDresses();
 
+        mainPage.selectEveningDresses()
+                .getTitileOfThePage()
+                .changeViewToList()
+                .clickOnMoreButton()
+                .changeColorToPink()
+                .changeSizeToL();
     }
 
 }
