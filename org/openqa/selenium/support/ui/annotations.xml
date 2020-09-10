@@ -1,0 +1,8 @@
+<root>
+    <item name='org.openqa.selenium.support.ui.ExpectedConditions org.openqa.selenium.support.ui.ExpectedCondition&lt;org.openqa.selenium.WebElement&gt; visibilityOf(org.openqa.selenium.WebElement)'>
+        <annotation name='org.jetbrains.annotations.Contract'>
+            <val name="value" val="&quot;_-&gt;new&quot;"/>
+            <val name="pure" val="true"/>
+        </annotation>
+    </item>
+</root>
